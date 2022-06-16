@@ -94,3 +94,9 @@ p {
   text-align: center;
   min-height: 70vh;
 }
+
+.theUniverse, .exploration {
+  margin: 6.3rem 7.5rem;
+
+  max-width: 64.8rem;
+}
