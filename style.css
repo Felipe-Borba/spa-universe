@@ -19,13 +19,6 @@ html {
   height: 100%;
 }
 
-body {
-  background-image: url("./assets/mountains-universe-1.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
 a {
   text-decoration: none;
   color: var(--color-font);
@@ -74,6 +67,20 @@ p {
   margin-top: 1.6rem;
 }
 
-#app {
-  margin: 0 10.2rem;
+#app img:nth-child(1) {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh;
 }
