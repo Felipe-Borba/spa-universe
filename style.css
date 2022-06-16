@@ -12,6 +12,7 @@
 
   --color-font-selected: white;
   --color-font: #c4c4cc;
+  --color-font-secondary: #e1e1e6
 }
 
 html {
@@ -46,7 +47,7 @@ h1 {
   font-weight: bold;
   font-size: 4.8rem;
   line-height: 125%;
-  color: #e1e1e6;
+  color: var(--color-font-secondary);
 }
 
 button {
@@ -63,6 +64,16 @@ button {
   margin-top: 2.4rem;
 }
 
+p {
+  font-size: 1.8rem;
+  color: var(--color-font-secondary);
+  line-height: 160%;
+
+  text-align: start;
+
+  margin-top: 1.6rem;
+}
+
 #app {
-  text-align: center;
+  margin: 0 10.2rem;
 }
