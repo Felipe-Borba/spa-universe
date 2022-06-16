@@ -9,9 +9,26 @@ export class Router {
     event = event || window.event;
     event.preventDefault();
 
+    this.styleSelected(event)
+
     window.history.pushState({}, "", event.target.href);
 
     this.loadPage();
+  }
+
+  styleSelected(event) {
+    this.clearAllSelected();
+    event.target.classList.add("selected");
+  }
+
+  clearAllSelected() {
+    const nav = document.querySelector("nav");
+    const tags = Array.from(nav.children).filter(
+      (child) => child.tagName === "A"
+    );
+    for (const tag of tags) {
+      tag.classList.remove("selected");
+    }
   }
 
   loadPage() {

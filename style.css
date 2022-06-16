@@ -77,6 +77,11 @@ p {
   margin-top: 1.6rem;
 }
 
+.selected {
+  font-weight: bold;
+  color: var(--color-font-selected);
+}
+
 #app img:nth-child(1) {
   height: 100vh;
   width: 100vw;
