@@ -12,7 +12,7 @@
 
   --color-font-selected: white;
   --color-font: #c4c4cc;
-  --color-font-secondary: #e1e1e6
+  --color-font-secondary: #e1e1e6;
 }
 
 html {
@@ -46,8 +46,10 @@ h1 {
 button {
   cursor: pointer;
   align-items: center;
-  padding: 1.2rem 3.2rem;
-  
+  width: 19.5rem;
+  height: 4.8rem;
+  font-size: 1.4rem;
+
   border: 2px solid var(--color-font-selected);
   border-radius: 5px;
 
@@ -55,6 +57,14 @@ button {
   color: var(--color-font-selected);
 
   margin-top: 2.4rem;
+}
+
+button:hover {
+  background-color: var(--color-font-selected);
+  color: #02799d;
+  font-weight: bold;
+
+  border: none;
 }
 
 p {
